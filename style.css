@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+.bg-landing {
+    display: flex;
+    background: url(./image/download\ \(3\).jpg) no-repeat center center fixed ;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.nav-brand h6{
+    text-align: center;
+    padding-top: 5px;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 20px;
+}
+
+.nav-item a:hover{
+    font-size: 20px;
+}
+    
+.navbar{
+    background: orangered;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-pg{
+    color: white;
+    align-content: center;
+}
+
+.content{
+    padding: 0 40px;
+}
+
+.welcome-pg h1{
+    color: orangered;
+}
+
+.welcome-btn{
+    background-color: orangered;
+    color: white
+}
+
+.welcome-btn:hover{
+    font-size: ;
+}
