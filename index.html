@@ -1,65 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-     <link rel="stylesheet" href="style.css">
-    <title>Home</title>
-  </head>
-  <body>
-
-  <!--Navigation-->
-  <nav class="navbar navbar-expand-md navbar-light sticky-top">
-      <div class="container-fluid">
-          <a href="./" class="nav-brand">
-            <h6>OLUWAPELUMI</h6>
-         </a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse"
-         data-target="#navbarResponsive">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse  navbar-collapse" id="navbarResponsive">
-             <ul class="navbar-nav ml-auto">
-                 <li class="nav-item active">
-                     <a class="nav-lnk" href="index.html">Home</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-lnk" href="about.html">About</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-lnk" href="portfolio.html">Portfolio</a>
-                 </li>
-                 <li class="nav-item">
-                     <a class="nav-lnk" href="contact.html">Contact</a>
-                 </li>
-             </ul>
-         </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blue.css">
+</head>
+<body>
+  <!-- main-container -->
+  <div class="main-container">
+    <!-- Aside-bar -->
+    <div class="aside">
+      <!-- logo -->
+      <div class="logo">
+        <a href="#">F. Pelumi</a>
       </div>
-  </nav>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#Home" class="active"><i class="fa fa-home"></i>Home</a></li>
+          <li><a href="#About"><i class="fa fa-user"></i>About</a></li>
+          <li><a href="#Portifolio"><i class="fa fa-briefcase"></i>Portifolio</a></li>
+          <li><a href="#Contact"><i class="fa fa-comments"></i>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="copyright-text">
+        copyright &copy; 2021
+      </div>
+    </div>
+    <!-- Aside-bar -->
+    <!-- Main-content -->
+    <div class="content">
+    <!-- Home -->
+    <section class="Home section hidden" id="Home">
+      <div class="container">
+        <div class="intro">
+           <img src="image/IMG_20200920_085410_341.jpg" alt="Profile" class="img-shadow">
+           <h1>Fatolu Oluwapelumi</h1>
+           <p>I'm a Web Developer</p>
+          <div class="social-links">
+             <a href=""><i class="fa fa-facebook"></i></a>
+             <a href=""><i class="fa fa-twitter"></i></a>
+             <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!--Welcome page-->
-  <div class=" bg-landing container-fluid">
-      <div class="row text-center ">
-          <div class="container welcome-pg">
-            <div class="col-12 content">
-                <h1  >HELLO, WELCOME TO MY OFFICIAL WEBSITE</h1>
-                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ab nemo odit sint voluptate, vitae ratione maiores illum recusandae sequi ipsam suscipit similique 
-                  nostrum quia a rerum reprehenderit, exercitationem unde.</p>
-                 <a href="#">
-                  <button  type=button class="btn btn-outline-secondary welcome-btn">Read more</button>
-                </a>
+    <!-- About -->
+    <section class="About section hidden" id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-title title padd-15">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-content padd-15">
+            <div class="row">
+              <div class="about-text padd-15">
+                <p>Hi! My name is Fatolu Oluwapelumi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Enim laudantium ex reiciendis qui ipsa porro similique ab deserunt quibusdam? Incidunt,
+                  necessitatibus nulla! Atque doloremque iusto inventore saepe possimus cum consectetur!
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="buttons padd-15">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#" class="btn">Hire Me</a>
+              </div>
             </div>
           </div>
+          <div class="skills padd-15">
+            <div class="row">
+              <div class="skill-item padd-15">
+                <h5>HTML</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 80%;"></div>
+                  <div class="skill-percent">80%</div>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <h5>CSS</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 70%;"></div>
+                  <div class="skill-percent">70%</div>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <h5>JavaScript</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 50%;"></div>
+                  <div class="skill-percent">60%</div>
+                </div>
+              </div>
+              <div class="skill-item padd-15">
+                <h5>Bootstrap</h5>
+                <div class="progress">
+                  <div class="progress-in" style="width: 60%;"></div>
+                  <div class="skill-percent">60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
       </div>
-  </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    </section>
+    <!-- Portfolio-section -->
+    <section class="section Portifolio" id="Portifolio">
+      <div class="container">
+        <div class="row">
+          <div class="portifolio-title title padd-15">
+            <h2>PORTFOLIO</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="portifolio-item padd-15">
+            <div class="portifolio-item-inner img-shadow">
+              <div class="portifolio-img">
+                <img src="image/uKLCScjj.jpg" alt="portifolio">
+              </div>
+              <div class="portifolio-desc">
+                <h4>Fylo Landing page</h4>
+                <div class="icon">
+                  <i class="fa fa-search"></i>
+                </div>
+                <div class="source-code">
+                  <a href=""><i class="fa fa-github"></i>View code</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Light-box -->
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="image/uKLCScjj.jpg" alt="" class="lightbox-img">
+        <div class="lightbox-caption">
+           <div class="caption-text">fylo Landing page</div>
+           <div class="lightbox-counter">1 of 6</div>
+        </div>
+      </div>
+      <div class="lightbox-controls">
+         <div class="prev-item"><i class="fa fa-angle-left"></i></div>
+         <div class="next-item"><i class="fa fa-angle-right"></i></div>
+      </div>
+    </div>
+
+    <section class="Contact section" id="Contact">
+      <div class="container">
+        <div class="section-title title padd-15">
+          <h2>Contact Me</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, fugiat.</p>
+        </div>
+        <div class="contactform">
+            <div class="col50">
+              <input type="text" name="" placeholder="First name">
+            </div>
+            <div class="col50">
+              <input type="text" name="" placeholder="Last name">
+            </div>
+            <div class="col50">
+              <input type="email" name="" placeholder="Email">
+            </div>
+            <div class="col50">
+              <input type="number" name="" placeholder="Mobile No.">
+            </div>
+            <div class="col100">
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="col100">
+              <input type="submit" value="Send">
+            </div>
+        </div>
+      </div>
+    </section>
+ </div>
+
+ <!-- Template Js -->
+ <script src="script.js"></script>
+</body>
 </html>
