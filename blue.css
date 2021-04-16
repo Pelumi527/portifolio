@@ -12,8 +12,8 @@
 .lightbox .lightbox-controls .next-item .fa,
 .Portifolio .portifolio-item .portifolio-desc .source-code a:hover,
 .Portifolio .portifolio-item .portifolio-desc .icon .fa,
-.aside .nav-bar li a:hover,
-.aside .nav-bar li a.active{
+.aside .navbar li a:hover,
+.aside .navbar li a.active{
     color: deepskyblue;
 }
 .aside .nav-toggler span,

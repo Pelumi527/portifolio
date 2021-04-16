@@ -31,6 +31,36 @@ input,textarea,button{
     min-height: 100vh;
     display: block;
     padding: 0 30px;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.section.back-section{
+    z-index: 1;
+}
+
+.section.active{
+    z-index: 2;
+    opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
 }
 
 .section .container{
@@ -77,9 +107,9 @@ input,textarea,button{
     padding-right: 15px;
     padding-left: 15px;
 }
-.content{
+/* .content{
     padding-left: 270px;
-}
+} */
 
 .container{
     max-height: 1100px;
@@ -112,6 +142,44 @@ input,textarea,button{
 .hidden{
     display: none !important;
 }
+
+.preloader{
+    background: #222;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.preloader .loader{
+    height: 40px;
+    width: 40px;
+    border: 4px solid #e3e3e3;
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.preloader .opacity-0{
+    opacity: 0;
+}
+
 /*Aside*/
 .aside{
     width: 270px;
@@ -123,6 +191,9 @@ input,textarea,button{
     z-index: 10;
     border-right:1px solid #e8dfec;
     padding: 30px;
+    transition: all 0.3s ease;
+ overflow-y: auto;
+
 }
 
 .aside .logo{
@@ -165,17 +236,18 @@ input,textarea,button{
    cursor: pointer;
    position: fixed;
    left: 300px;
-   top: 30px;
+   top: 20px;
    z-index: 11;
    border-radius: 5px;
    background-color: #fdf9ff;
-   display: -ms-flexbox;
-   display: flex;
-   /* display: none; */
+   /* display: -ms-flexbox;
+   display: flex; */
+   display: none;
    -ms-flex-align: center;
    align-items: center;
    -ms-flex-pack: center;
    justify-content: center;
+   transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span{
@@ -183,7 +255,10 @@ input,textarea,button{
     width: 18px;
     display: inline-block;
     position: relative;
+}
 
+.aside .nav-toggler.open span{
+    background-color: transparent;
 }
 
 .aside .nav-toggler span::before{
@@ -194,6 +269,12 @@ input,textarea,button{
     top: -6px;
     left: 0;
 }
+
+.aside .nav-toggler.open span::before{
+  transform: rotate(45deg);
+  top: 0px;
+}
+
 .aside .nav-toggler span::after{
     content: '';
     height: 2px;
@@ -203,23 +284,28 @@ input,textarea,button{
     left: 0;
 }
 
+.aside .nav-toggler.open span::after{
+    transform: rotate(-45deg);
+    top: 0px
+}
+
 
 .aside .copyright-text{
     font-size: 13px;
     color: #7d7d7d;
 }
 
-.aside .nav-bar ul{
+.aside .navbar ul{
     list-style: none;
     margin: 80px 0;
     padding: 0;
 }
 
-.aside .nav-bar li{
+.aside .navbar li{
     display: block;
 }
 
-.aside .nav-bar li a{
+.aside .navbar li a{
     font-size: 16px;
     font-weight: 600;
     color:#302e4d;
@@ -232,11 +318,11 @@ input,textarea,button{
     text-transform: capitalize;
 }
 
-.aside .nav-bar li a:not(.active):hover{
+.aside .navbar li a:not(.active):hover{
     padding-left: 5px;
 }
 
-.aside .nav-bar li a .fa{
+.aside .navbar li a .fa{
     margin-right: 5px;
 }
 
@@ -632,15 +718,38 @@ input,textarea,button{
 }
 
 
-/* Responiveness */
- @media (max-width:1199px) {
-     .aside{
-         left: -270px;
-     }
+/* Responiveness  */
+  @media (max-width:1199px) {
+    .section .container{
+        padding-top: 70px;
+    }
+    .aside .nav-toggler{
+        display: flex;
+        left: 30px;
+    }
 
-     .content{
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+
+    .aside{
+        left: -270px;
+    }
+
+    .aside.open{
+        left: 0px;
+    }
+    .section{
+        left: 0px;
+    }
+
+    .section.open{
+        left: 270px;
+    }
+     
+    .content{
         padding-left: 0;
-     }
+    }
  }
 
  @media (max-width:991px){
@@ -648,24 +757,4 @@ input,textarea,button{
          flex: 0 0 50%;
          max-width: 50%;
      }
- }
-
- @media (max-width:767px){
-    .contactform {
-
-    }
-}
-
-
- @media (max-width:575px){
-    .Portifolio .portifolio-item{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .Contact{
-        position: ;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
+ } 
