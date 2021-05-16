@@ -1,0 +1,29 @@
+.aside .logo a::before {
+	border-top: 4px solid #72b626;
+	border-left: 4px solid #72b626;
+}
+
+.aside .logo a::after {
+	border-bottom: 4px solid #72b626;
+	border-right: 4px solid #72b626;
+}
+
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa,
+.Portifolio .portifolio-item .portifolio-desc .source-code a:hover,
+.Portifolio .portifolio-item .portifolio-desc .icon .fa,
+body.dark .aside .navbar li a:hover,
+.aside .navbar li a:hover,
+body.dark .aside .navbar li a.active,
+.aside .navbar li a.active {
+	color: #72b626;
+}
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after,
+.Home .intro .social-links a,
+.title h2::before,
+.btn,
+.About .skills .skill-item .progress .progress-in {
+	background-color: #72b626;
+}

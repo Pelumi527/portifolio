@@ -5,14 +5,16 @@
 
 .aside .logo a::after{
     border-bottom: 4px solid deepskyblue;
-    border-right: 4px solid deepskyblue;;
+    border-right: 4px solid deepskyblue;
 }
 
 .lightbox .lightbox-controls .prev-item .fa,
 .lightbox .lightbox-controls .next-item .fa,
 .Portifolio .portifolio-item .portifolio-desc .source-code a:hover,
 .Portifolio .portifolio-item .portifolio-desc .icon .fa,
+body.dark .aside .navbar li a:hover,
 .aside .navbar li a:hover,
+body.dark .aside .navbar li a.active,
 .aside .navbar li a.active{
     color: deepskyblue;
 }

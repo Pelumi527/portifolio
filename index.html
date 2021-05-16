@@ -5,8 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
   <title>Home</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="blue.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/blue.css">
+
+  <!-- live style switch -->
+  <link rel="stylesheet" title="blue" class="change-style" href="css/blue.css" type="text/css" disabled>
+  <link rel="stylesheet" title="green" class="change-style" href="css/green.css" type="text/css" disabled>
+  <link rel="stylesheet" title="orange" class="change-style" href="css/orange.css" type="text/css" disabled>
+  <link rel="stylesheet" href="css/styleswitch.css" type="text/css">
+  
 </head>
 <body>
   <!-- preloader -->
@@ -48,9 +55,10 @@
            <h1>Fatolu Oluwapelumi</h1>
            <p>I'm a Web Developer</p>
           <div class="social-links">
-             <a href=""><i class="fa fa-facebook"></i></a>
-             <a href=""><i class="fa fa-twitter"></i></a>
-             <a href=""><i class="fa fa-linkedin"></i></a>
+             <a href="https://www.facebook.com/fatolu.olamide" target="_blank"><i class="fa fa-facebook"></i></a>
+             <a href="https://twitter.com/FatoluP" target="_blank"><i class="fa fa-twitter"></i></a>
+             <a href="https://www.linkedin.com/in/pelumi-fatolu-70082719a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+             <a href="https://github.com/Pelumi527" target="_blank"><i class="fa fa-github"></i></a>
           </div>
         </div>
       </div>
@@ -68,15 +76,14 @@
           <div class="about-content padd-15">
             <div class="row">
               <div class="about-text padd-15">
-                <p>Hi! My name is Fatolu Oluwapelumi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Enim laudantium ex reiciendis qui ipsa porro similique ab deserunt quibusdam? Incidunt,
-                  necessitatibus nulla! Atque doloremque iusto inventore saepe possimus cum consectetur!
+                <p>Hi! My name is Fatolu Oluwapelumi. I am a frontend web developer, who enjoys coding and solving problems. I have 1+ years working with JavaScript, CSS, HTML. I have worked fairly with framework like 
+                  React.js. I also have an interest in Blockchain technology.
                 </p>
               </div>
             </div>
             <div class="row">
               <div class="buttons padd-15">
-                <a href="#" class="btn">Download CV</a>
+                <a href="download/Fatolu_Pelumi_CV.pdf" class="btn" download="CV">Download CV</a>
                 <a href="#Contact" data-section-index="1" class="btn hire-me">Hire Me</a>
               </div>
             </div>
@@ -126,7 +133,7 @@
             <h2>PORTFOLIO</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="item-row">
           <div class="portifolio-item padd-15">
             <div class="portifolio-item-inner img-shadow">
               <div class="portifolio-img">
@@ -138,7 +145,7 @@
                   <i class="fa fa-search"></i>
                 </div>
                 <div class="source-code">
-                  <a href=""><i class="fa fa-github"></i>View code</a>
+                  <a href="https://github.com/Pelumi527/fylo" target="_blank"><i class="fa fa-github"></i>View code</a>
                 </div>
               </div>
             </div> 
@@ -146,15 +153,15 @@
           <div class="portifolio-item padd-15">
             <div class="portifolio-item-inner img-shadow">
               <div class="portifolio-img">
-                <img src="image/uKLCScjj.jpg" alt="portifolio">
+                <img src="image/profile-card.png" alt="portifolio">
               </div>
               <div class="portifolio-desc">
-                <h4>Fylo Landing page</h4>
+                <h4>Profile card</h4>
                 <div class="icon">
                   <i class="fa fa-search"></i>
                 </div>
                 <div class="source-code">
-                  <a href=""><i class="fa fa-github"></i>View code</a>
+                  <a href="https://github.com/Pelumi527/Profile-card" target="_blank"><i class="fa fa-github"></i>View code</a>
                 </div>
               </div>
             </div>
@@ -162,15 +169,15 @@
           <div class="portifolio-item padd-15">
             <div class="portifolio-item-inner img-shadow">
               <div class="portifolio-img">
-                <img src="image/uKLCScjj.jpg" alt="portifolio">
+                <img src="image/liveCrypto.png" alt="portifolio">
               </div>
               <div class="portifolio-desc">
-                <h4>Fylo Landing page</h4>
+                <h4>Live Crypto</h4>
                 <div class="icon">
                   <i class="fa fa-search"></i>
                 </div>
                 <div class="source-code">
-                  <a href=""><i class="fa fa-github"></i>View code</a>
+                  <a href="https://github.com/Pelumi527/T2-web2project" target="_blank"><i class="fa fa-github"></i>View code</a>
                 </div>
               </div>
             </div>
@@ -231,29 +238,47 @@
       <div class="container">
         <div class="section-title title padd-15">
           <h2>Contact Me</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, fugiat.</p>
+          <p>For more information feel free to contact me. Looking forward to hearing from you.</p>
+          <div class="contact-info">
+            <a href="mailto:fatolupelumi@gmail.com"><i class="fa fa-envelope" aria-hidden="true" ></i>fatolupelumi@gmail.com</a>
+            <a href="tel:+2348130090239"><i class="fa fa-mobile" aria-hidden="true" ></i>+2348130090239</a>
+            <a href="tel:+2348130090239"><i class="fa fa-whatsapp"></i>+2348130090239</a>
+          </div>
         </div>
       </div>
-      <div class="contactform">
-        <div class="col50">
-            <input type="text" name="" placeholder="First name">
+      <!-- <div class="panel-body">
+        <form id="reused-form" class="contactform">
+          <div class="col50 form-group">
+              <label></label>
+              <input type="text" name="First name" placeholder="First name" class="form-control">
+          </div>
+          <div class="col50 form-group">
+              <label></label>
+              <input type="text" name="Last name" placeholder="Last name" class="form-control">
+          </div>
+          <div class="col50 form-group">
+            <label></label>
+            <input type="email" name="email" placeholder="Email" class="form-control">
+          </div>
+          <div class="col50 form-group">
+            <label></label>
+            <input type="number" name="number" placeholder="Mobile No." class="form-control">
+          </div>
+          <div class="col100 form-group">
+            <label></label>
+            <textarea name="message" placeholder="Message" class="form-control"></textarea>
+          </div>
+          <div class="col100 form-group">
+            <button class="btn">Send</button>
+          </div>
+        </form>
+        <div id="error_message" style="width:100%; height:100%; display:none; ">
+          <h4>Error! Sorry there was an error sending your form.</h4>
         </div>
-        <div class="col50">
-            <input type="text" name="" placeholder="Last name">
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+          <h2>Success! Your Message was Sent Successfully.</h2>
         </div>
-        <div class="col50">
-          <input type="email" name="" placeholder="Email">
-        </div>
-        <div class="col50">
-          <input type="number" name="" placeholder="Mobile No.">
-        </div>
-        <div class="col100">
-          <textarea placeholder="Message"></textarea>
-        </div>
-        <div class="col100">
-          <button class="btn">Send</button>
-        </div>
-    </div>
+      </div> -->
     </section>
 
 
@@ -274,7 +299,33 @@
     </div>
  </div>
 
+
+ <!-- live style switch -->
+  <div class="style-switch">
+    <div class="toggle-style-switch">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <h5>StyleSwitch</h5> 
+    <ul>
+      <li><a href="javascript:void(0);" title="blue" style="background-color:deepskyblue" onclick="setActiveStyle('blue')"></a></li>
+      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626" onclick= "setActiveStyle('green')" ></a></li>
+      <li><a href="javascript:void(0);" title="orange" style="background-color:#fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+      Light
+    </label>
+    <label>
+      <input type="radio" class="body-skin" name="body-style" value="dark">
+      Dark
+    </label>
+
+  </div>
+
  <!-- Template Js -->
- <script src="script.js"></script>
+ <script src="Js/script.js"></script>
+ <script src="Js/style-switch.js"></script>
+
 </body>
 </html>

@@ -385,6 +385,10 @@ input,textarea,button{
 }
 
 /* About section */
+.About{
+    margin-top: 50px;
+}
+
 .About .about-content{
     flex: 0 0 100%;
     max-width: 100%;
@@ -463,6 +467,11 @@ input,textarea,button{
     padding-bottom: 40px;
 }
 
+.Portifolio .item-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .Portifolio .portifolio-item{
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -478,7 +487,9 @@ input,textarea,button{
 }
 .Portifolio .portifolio-item .portifolio-item-inner .portifolio-img img{
     width: 100%;
+    height: 188px;
     display: block;
+
 }
 
 .Portifolio .portifolio-item-inner .portifolio-desc{
@@ -513,6 +524,7 @@ input,textarea,button{
     transform: translateX(0px);
     opacity: 1;
 }
+    
 
 .Portifolio .portifolio-item .portifolio-desc .icon{
     height: 30px;
@@ -674,6 +686,24 @@ input,textarea,button{
     font-size: 32px;
     line-height: 40px;
 }
+.Contact{
+    margin-top: 100px;
+}
+
+.Contact .contact-info{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Contact .contact-info a{
+    color: black;
+    margin-right: 20px;
+}
+.Contact .section-title .fa{
+    margin-right: 5px;
+    
+}
 
 .contactform{
     display: flex;
@@ -717,6 +747,37 @@ input,textarea,button{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
+/* dark body */
+body.dark .section{
+    background-color: #151515;
+}
+body.dark .contactform .col50 input,
+body.dark .contactform .col100 textarea,
+body.dark .aside{
+    background-color: #222;
+}
+body.dark .Contact .contact-info a,
+body.dark .contactform .col50 input,
+body.dark .contactform .col100 textarea,
+body.dark .aside .logo a,
+body.dark .aside .navbar li a{
+    color: #fff;
+}
+
+body.dark .aside .nav li a{
+    border-color: #393939;
+}
+body.dark .title h2,
+body.dark .About .about-content .about-text p,
+body.dark .Home .intro p,
+body.dark .Home .intro h1{
+    color: #fff;
+}
+
+body.dark p{
+    color: #fff
+}
+
 
 /* Responiveness  */
   @media (max-width:1199px) {
@@ -758,3 +819,10 @@ input,textarea,button{
          max-width: 50%;
      }
  } 
+
+ @media (max-width:497px){
+    .Portifolio .portifolio-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+} 
